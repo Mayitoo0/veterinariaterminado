@@ -1,0 +1,128 @@
+@font-face {
+  font-family: 'MiFuente';
+  src: url('fonts/Simanja.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  width: 80%;
+  margin: auto;
+  font-family: 'MiFuente', 'Segoe UI', Arial, sans-serif;
+  background: linear-gradient(135deg, #e0f7fa 0%, #fffde4 100%);
+  min-height: 100vh;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 30px;
+  font-weight: bold;
+  color: #2e7d32;
+  letter-spacing: 2px;
+  text-shadow: 1px 1px 4px #b2dfdb;
+}
+
+.linea {
+  border-bottom: 2px solid #81c784;
+  margin: 20px 0;
+}
+
+.card {
+  border-radius: 18px;
+  box-shadow: 0 4px 16px rgba(44, 62, 80, 0.08);
+  border: none;
+  transition: transform 0.15s;
+  background: #fff;
+  position: relative;
+}
+
+button:hover {
+  transform: translateY(-3px) scale(1.02);
+  box-shadow: 0 8px 24px rgba(44, 62, 80, 0.15);
+}
+
+.card .badge {
+  font-size: 0.95em;
+  padding: 0.4em 0.8em;
+}
+
+.card img {
+  border-radius: 50%;
+  border: 2px solid #81c784;
+  background: #fff;
+}
+
+.btn-outline-success,
+.btn-success {
+  border-radius: 25px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  transition: background 0.2s, color 0.2s;
+}
+
+.btn-outline-success:hover,
+.btn-success:hover {
+  background: #388e3c;
+  color: #fff;
+}
+
+.form-label {
+  color: #388e3c;
+  font-weight: 500;
+}
+
+.form-control,
+.form-select {
+  border-radius: 10px;
+  border: 1px solid #b2dfdb;
+  background: #f9fbe7;
+  transition: border 0.2s;
+}
+
+.form-control:focus,
+.form-select:focus {
+  border-color: #388e3c;
+  box-shadow: 0 0 0 2px #b2dfdb55;
+}
+
+.modal-content {
+  border-radius: 18px;
+  box-shadow: 0 8px 32px rgba(44, 62, 80, 0.15);
+}
+
+.modal-header {
+  background: #e8f5e9;
+  border-bottom: 1px solid #b2dfdb;
+  border-radius: 18px 18px 0 0;
+}
+
+.modal-footer {
+  background: #f1f8e9;
+  border-top: 1px solid #b2dfdb;
+  border-radius: 0 0 18px 18px;
+}
+
+select#wfiltroEstado,
+select#filtroEstado {
+  min-width: 160px;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  background: #e0f2f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #81c784;
+  border-radius: 8px;
+}
+
+@media (max-width: 768px) {
+  .card {
+    margin-bottom: 20px;
+  }
+
+  .container {
+    padding: 0 8px;
+  }
+}
